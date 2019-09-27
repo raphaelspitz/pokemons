@@ -10,9 +10,10 @@ import { POKEMONS } from './mock-pokemons/mock-pokemons';
 })
 export class AppComponent implements OnInit {
 
-  title = 'pokemonsapp';
   //table of pokemons
   private pokemons: Pokemon[];
+
+  private value: string = null;
 
   //charging the mocks onload of the page
   ngOnInit(): void {
@@ -21,6 +22,10 @@ export class AppComponent implements OnInit {
   }
 
   selectPokemon(pokemon:Pokemon){
-    alert("vous avez cliquer sur :"+pokemon.name);
+   // alert("vous avez cliquer sur :"+pokemon.name);
+  }
+
+  onKey(event:any){
+    this.value ="this to test the event key up" + event.target.value;
   }
 }
