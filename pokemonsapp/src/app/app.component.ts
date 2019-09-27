@@ -15,11 +15,13 @@ export class AppComponent implements OnInit {
 
   private title: string = "Pokémons";
 
-  value = "";
-
   //charging the mocks onload of the page
   ngOnInit(): void {
     this.pokemons = POKEMONS;
+  }
+
+  selectPokemon(pokemon){
+    console.log(pokemon);
   }
 
 }
