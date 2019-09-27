@@ -5,8 +5,8 @@
   <li>Salamèche</li>
   <li>Carapuce</li>
 </ul>
-<input type="text" (keyup)="onKey($event)">
+<input #box type="text" (keyup)="onKey(box.value)">
 
-<p>{{value}}</p>
+<p>{{box.value}}</p>
 
 <router-outlet></router-outlet>

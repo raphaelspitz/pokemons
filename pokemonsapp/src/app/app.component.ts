@@ -26,6 +26,6 @@ export class AppComponent implements OnInit {
   }
 
   onKey(event:any){
-    this.value ="this to test the event key up" + event.target.value;
+    this.value ="this to test the  event key up" + event.target.value;
   }
 }
