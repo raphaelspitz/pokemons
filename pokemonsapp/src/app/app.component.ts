@@ -13,19 +13,13 @@ export class AppComponent implements OnInit {
   //table of pokemons
   private pokemons: Pokemon[];
 
-  private value: string = null;
+  private title: string = "Pokémons";
+
+  value = "";
 
   //charging the mocks onload of the page
   ngOnInit(): void {
     this.pokemons = POKEMONS;
-    this.selectPokemon(this.pokemons[1])
   }
 
-  selectPokemon(pokemon:Pokemon){
-   // alert("vous avez cliquer sur :"+pokemon.name);
-  }
-
-  onKey(value:string){
-    this.value ="this to test the  event key up" + value;
-  }
 }

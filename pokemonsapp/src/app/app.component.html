@@ -1,12 +1,6 @@
-<h1>Liste de Pokemons</h1>
+<h1>{{title}}</h1>
 
-<ul>
-  <li>Bulbizarre</li>
-  <li>Salamèche</li>
-  <li>Carapuce</li>
-</ul>
-<input #box type="text" (keyup)="onKey(box.value)">
+<input #box (keyup.enter)="values=box.value">
 
-<p>{{box.value}}</p>
+<p>{{values}}</p>
 
-<router-outlet></router-outlet>
