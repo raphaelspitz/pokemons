@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Pokemon } from './model/pokemon';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pokemonsapp';
+  //table of pokemons
+  private pokemons: Pokemon[];
 }
