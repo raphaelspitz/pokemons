@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Pokemon } from './model/pokemon';
 
 @Component({
@@ -6,8 +6,13 @@ import { Pokemon } from './model/pokemon';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
   title = 'pokemonsapp';
   //table of pokemons
   private pokemons: Pokemon[];
+
+  ngOnInit(): void {
+    this.pokemons = POKEMON;
+  }
 }
