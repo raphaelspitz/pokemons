@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
    // alert("vous avez cliquer sur :"+pokemon.name);
   }
 
-  onKey(event:any){
-    this.value ="this to test the  event key up" + event.target.value;
+  onKey(value:string){
+    this.value ="this to test the  event key up" + value;
   }
 }
