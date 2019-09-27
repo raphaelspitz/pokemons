@@ -1,6 +1,6 @@
 <h1>{{title}}</h1>
 
-<input #box (keyup.enter)="values=box.value">
+<input #box (keyup.enter)="values=box.value"  (blur)="values=box.value">
 
 <p>{{values}}</p>
 
