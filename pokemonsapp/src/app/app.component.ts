@@ -21,7 +21,11 @@ export class AppComponent implements OnInit {
   }
 
   selectPokemon(pokemon){
-    console.log(pokemon);
+   // console.log(pokemon);
+  }
+
+  showPokemonDate(date){
+    console.log(date.innerText);
   }
 
 }
