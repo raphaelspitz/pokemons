@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { Pokemon } from './model/pokemon';
 import { POKEMONS } from './mock-pokemons/mock-pokemons';
@@ -8,24 +8,5 @@ import { POKEMONS } from './mock-pokemons/mock-pokemons';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-
-  //table of pokemons
-  private pokemons: Pokemon[];
-
-  private title: string = "Pokémons";
-
-  //charging the mocks onload of the page
-  ngOnInit(): void {
-    this.pokemons = POKEMONS;
-  }
-
-  selectPokemon(pokemon){
-   // console.log(pokemon);
-  }
-
-  showPokemonDate(date){
-    console.log(date.innerText);
-  }
-
+export class AppComponent  {
 }
