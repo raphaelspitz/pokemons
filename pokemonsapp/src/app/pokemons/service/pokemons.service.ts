@@ -1,7 +1,10 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { catchError, map, tap } from 'rxjs/operators';
 import { POKEMONS } from './../mock-pokemons/mock-pokemons';
 import { Pokemon } from './../model/pokemon';
 import { Injectable } from '@angular/core';
-
+import { from } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
