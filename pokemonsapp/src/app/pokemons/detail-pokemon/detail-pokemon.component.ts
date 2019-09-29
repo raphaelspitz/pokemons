@@ -18,10 +18,12 @@ export class DetailPokemonComponent implements OnInit {
 		private pokemonsService:PokemonsService) {}
 
 	ngOnInit(): void {
-		this.pokemons = this.pokemonsService.getPokemons();
 // + is used to cast a string in number
 		let id = +this.route.snapshot.paramMap.get('id');
-		 this.pokemon = this.pokemonsService.getPokemon(id);
+		
+		this.pokemonsService.getPokemon(id)
+		 .subscribe( pokemon => this.pokemon = pokemon )
+
 	}
 
 	goBack(): void {
